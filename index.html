@@ -4,11 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Personal Website</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="formulario.js"></script>
 </head>
 <body>
 <div class="navbar-fixed">
@@ -28,7 +31,7 @@
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Inicio</a></li>
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#compensation">Compensación</a></li>
                 <li><a href="#Educacíon">Educacíon</a></li>
@@ -215,6 +218,75 @@
 
 </div>
 
+<!--Formulario section-->
+<!--Counsel section-->
+
+<div class="container">
+    <div class="section scrollspy" id="counsel">
+        <div class="row">
+            <div class="col s12 center">
+                <h4 class="paragraph2">Deja tu mensaje</h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, pariatur. Eos, similique, quam impedit quia nemo et magnam maxime, eligendi vel tenetur nam aliquam in reiciendis ea fugit veritatis reprehenderit!.</p>
+            </div>
+        </div>
+
+        <form action="https://formspree.io/f/xrgnekrz"
+        method="POST" >
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" name="nombre" class="autocomplete">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" name="email" class="autocomplete">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" name="tema" class="autocomplete">
+                            <label for="tema">Tema</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix" id="message">textsms</i>
+                            <input type="text" name="contenidoConsulta" class="autocomplete">
+                            <label for="contenidoConsulta">Contenido de consulta</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="enviarBtn" class="btn waves-effect gradient" type="submit">Enviar
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+
+    </div>
+</div>
+
+
+
 
 <!--Footer section-->
 <footer class="page-footer">
@@ -235,6 +307,8 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
+
+
 
 </body>
 </html>
